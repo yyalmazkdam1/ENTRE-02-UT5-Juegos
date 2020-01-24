@@ -16,10 +16,10 @@ public class Juego {
      */
     public Juego(String linea) {
         
-        String[] tokens = linea.split(SEPARADOR);
-        this.titulo = tokens[0].trim().toUpperCase();
-        this.genero = Genero.valueOf(tokens[1].trim().toUpperCase());
-        this.year = Integer.parseInt(tokens[2].trim());
+        String[] l = linea.split(SEPARADOR);
+        this.titulo = l[0].trim().toUpperCase();
+        this.genero = Genero.valueOf(l[1].trim().toUpperCase());
+        this.year = Integer.parseInt(l[2].trim());
         valoraciones = new int[10];
         
 
